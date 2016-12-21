@@ -2,7 +2,7 @@ const request = require("request"),
       mongoose = require("mongoose"),
       express = require("express"),
       router = express.Router(),
-      schema = require("./schema");
+      schema = require("../schema");
 
 mongoose.connect("mongodb://markus:markus@ds141428.mlab.com:41428/latest-searches");
 var Search = mongoose.model("Search", schema);

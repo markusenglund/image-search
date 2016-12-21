@@ -10,19 +10,18 @@
         <p><strong>by Markus Englund</strong></p>
         <ul>
             <li>This API uses Bing image search</li>
-            <li>You can search for something by putting a keyword inside the url</li>
+            <li>You can search for pictures by putting a keyword inside the url</li>
+            <li>You can add an offset query to the url to skip results</li>
+            <li>You can also view your search history</li>
         </ul>
 
-        <h3>Example</h3>
-        <p>Go to <a href="https://url-service-yogaboll.herokuapp.com/new/http://www.aol.com">https://url-service-yogaboll.herokuapp.com/new/http://www.aol.com/</a></p>
-        <p>You will receive a response that looks like this:</p>
-        <pre><code>
-    {
-    "short_url": "https://url-service-yogaboll.herokuapp.com/r1rNjcrVg",
-    "original_url": "http://www.aol.com"
-    }
-        </code></pre>
-        <p>The "short url" (*cough*) will redirect you to the AOL homepage!</p>
+        <h3>Image search example</h3>
+        <p>Go to <a href="https://image-search-yogaboll.herokuapp.com/api/imagesearch/boeing 747?offset=10">https://image-search-yogaboll.herokuapp.com/api/imagesearch/boeing 747?offset=10</a></p>
+        <p>You will receive a JSON response with a list of objects. Each object has link to an image, the name of the image file, a link to a thumbnail and a link to the website on which the image was originally displayed. An offset value of 10 means that Bing skipped the first 10 results.</p>
+
+        <h3>Search history</h3>
+        <p>Go to <a href="https://image-search-yogaboll.herokuapp.com/api/latest">https://image-search-yogaboll.herokuapp.com/api/latest</a></p>
+        <p>You will receive a list of all the latest searches on this API</p>
     </div>
     
 </body>       

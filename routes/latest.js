@@ -1,7 +1,7 @@
 const mongoose = require("mongoose"),
       express = require("express"),
       router = express.Router(),
-      schema = require("./schema");
+      schema = require("../schema");
 
 router.get("/", (req, res) => {
 

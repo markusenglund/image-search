@@ -1,8 +1,3 @@
-//TODO:
-//do homepage
-//Should the connection to the database ever close?
-//Do git stuff and heroku
-
 const path = require("path"),
       express = require("express"),
       app = express(),
